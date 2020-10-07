@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Flexible-Jekyll is a simple and clean theme for Jekyll
 
-You can use the [editor on GitHub](https://github.com/ABCD-ReproNim/materials/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Demo
 
-### Markdown
+Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The main page would look like this:
 
-```markdown
-Syntax highlighted code block
+![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
 
-# Header 1
-## Header 2
-### Header 3
+The post page would look like this:
 
-- Bulleted
-- List
+![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
 
-1. Numbered
-2. List
+## Features
 
-**Bold** and _Italic_ and `Code` text
+- [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](http://fontawesome.io/)
+- [Disqus](https://disqus.com/)
+- [Analytics](https://analytics.google.com/analytics/web/)
+- Support Emoji
 
-[Link](url) and ![Image](src)
-```
+## Installation:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
 
-### Jekyll Themes
+## License
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ABCD-ReproNim/materials/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+GNU General Public License v3.0
 
-### Support or Contact
+## Donate
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
+<p align="center"><b>Thank you for your support ❤️</b></p>

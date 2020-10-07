@@ -1,0 +1,107 @@
+---
+layout: main
+---
+<article class="article-page">
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">{{page.title}}</h1>
+        <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+        <div class="row" align="left">
+            {% if page.livestream %}
+            <a class="off" href="{{ page.livestream }}">Livestream Link</a>
+            {% else %}
+            Livestream Link (to be added)
+            {% endif %}
+
+            <div class="smallspacer"></div>
+
+            {% if page.qa_doc %}
+            <a class="off" href="{{ page.qa_doc }}">Question & Answer Doc</a>
+            {% else %}
+            Question & Answer Doc (to be added)
+            {% endif %}
+        </div>
+        <hr />
+        <div class="row" align="left">
+            <h2 align="center">
+                ABCD Lecture
+            </h2>
+
+            <div class="bigspacer"></div>
+
+            {% if page.abcd_video %}
+            <div class="media">
+                <iframe width="560" height="315" src="{{ page.abcd_video}}" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            {% else %}
+            <img src="{{site.baseurl}}/assets/img/video-placeholder.png" width="560" height="315">
+            {% endif %}
+
+            <div class="smallspacer"></div>
+            {% if page.abcd_readings %}
+            <a class="off" href="{{ page.abcd_slides }}">Lecture Slides PDF</a>
+            {% else %}
+            Slides (to be added)
+            {% endif %}
+
+            <div class="smallspacer"></div>
+            {% if page.abcd_readings %}
+            <a class="off" href="{{ page.abcd_readings }}">Readings</a>
+            {% else %}
+            Readings (to be added)
+            {% endif %}
+
+            <div class="smallspacer"></div>
+            {% if page.abcd_exercises %}
+            <a class="off" href="{{ page.abcd_exercises }}">Data Exercises</a>
+            {% else %}
+            Data Exercises (to be added)
+            {% endif %}
+        </div>
+        <hr />
+        <div class="row" align="left">
+            <h2 align="center">
+                ReproNim Lecture
+            </h2>
+
+            <div class="bigspacer"></div>
+
+            {% if page.repronim_video %}
+            <div class="media">
+                <iframe width="560" height="315" src="{{ page.repronim_video}}" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            {% else %}
+            <img src="{{site.baseurl}}/assets/img/video-placeholder.png" width="560" height="315">
+            {% endif %}
+
+            <div class="smallspacer"></div>
+            {% if page.repronim_readings %}
+            <a class="off" href="{{ page.repronim_slides }}">Lecture Slides PDF</a>
+            {% else %}
+            Slides (to be added)
+            {% endif %}
+
+            <div class="smallspacer"></div>
+            {% if page.abcd_readings %}
+            <a class="off" href="{{ page.abcd_readings }}">Readings</a>
+            {% else %}
+            Readings (to be added)
+            {% endif %}
+
+            <div class="smallspacer"></div>
+            {% if page.abcd_exercises %}
+            <a class="off" href="{{ page.abcd_exercises }}">Data Exercises</a>
+            {% else %}
+            Data Exercises (to be added)
+            {% endif %}
+        </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
