@@ -1513,3 +1513,19 @@ a.newer-posts:hover {
     text-decoration: none;
     border-bottom: thin solid;
 }
+
+.hugespacer {
+	height: 50px;
+}
+
+.bigspacer {
+	height: 20px;
+}
+
+.spacer {
+	height: 10px;
+}
+
+.smallspacer {
+	height: 5px;
+}
