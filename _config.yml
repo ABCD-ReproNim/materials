@@ -9,10 +9,10 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: ABCD-ReproNim Course # add your name
 author-img: abcd_repronim.png
-about-author: Course materials for the ABCD-ReproNim course. # add description
-social-twitter: # add your Twitter handle
+about-author: Materials for the ABCD-ReproNim Course. # add description
+social-twitter: ABCD_ReproNim # add your Twitter handle
 social-facebook: # add your Facebook handle
-social-github: # add your Github handle
+social-github: ABCD-ReproNim # add your Github handle
 social-linkedin: # add your Linkedin handle
 social-email: info@abcd-repronim.org # add your Email address
 
