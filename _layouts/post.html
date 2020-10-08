@@ -30,6 +30,18 @@ layout: main
                     Question & Answer Doc (to be added)
                 </div>
             {% endif %}
+
+            <div class="bigspacer"></div>
+
+            {% if page.exercises %}
+                <div class="smallhead">
+                    <a class="off" href="{{ page.exercises }}">Data Exercises</a>
+                </div>
+            {% else %}
+                <div class="smallhead subtle">
+                    Data Exercises (to be added)
+                </div>
+            {% endif %}
         </div>
         <div class="bigspacer"></div>
         <hr />
@@ -52,7 +64,6 @@ layout: main
 
             {% if page.abcd_slides %}
                 <div class="smallhead">
-                    <i class="fa fa-file-pdf fa-fw"></i>
                     <a class="off" href="{{ page.abcd_slides }}">Lecture Slides PDF</a>
                 </div>
             {% else %}
@@ -81,18 +92,6 @@ layout: main
             {% else %}
                 <div class="smallhead subtle">
                     Readings (to be added)
-                </div>
-            {% endif %}
-
-            <div class="bigspacer"></div>
-
-            {% if page.abcd_exercises %}
-                <div class="smallhead">
-                    <a class="off" href="{{ page.abcd_exercises }}">Data Exercises</a>
-                </div>
-            {% else %}
-                <div class="smallhead subtle">
-                    Data Exercises (to be added)
                 </div>
             {% endif %}
         </div>
@@ -146,18 +145,6 @@ layout: main
             {% else %}
                 <div class="smallhead subtle">
                     Readings (to be added)
-                </div>
-            {% endif %}
-
-            <div class="bigspacer"></div>
-
-            {% if page.repronim_exercises %}
-                <div class="smallhead">
-                    <a class="off" href="{{ page.repronim_exercises }}">Data Exercises</a>
-                </div>
-            {% else %}
-                <div class="smallhead subtle">
-                    Data Exercises (to be added)
                 </div>
             {% endif %}
         </div>
