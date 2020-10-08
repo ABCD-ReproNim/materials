@@ -67,7 +67,8 @@ layout: main
                 <div class="smallhead">
                 Readings
                 </div>
-                {% for i in (0..page.abcd_reading_links.size-1) %}
+                {% assign n_readings = page.abcd_reading_links.size | minus: 1 %}
+                {% for i in (0..n_readings) %}
                     {% assign reading_link = page.abcd_reading_links[i] %}
                     {% assign reading_name = page.abcd_reading_names[i] %}
                     <div class="item">
@@ -131,7 +132,8 @@ layout: main
                 <div class="smallhead">
                     Readings
                 </div>
-                {% for i in (0..page.repronim_reading_links.size-1) %}
+                {% assign n_readings = page.repronim_reading_links.size | minus: 1 %}
+                {% for i in (0..n_readings) %}
                 {% assign reading_link = page.repronim_reading_links[i] %}
                 {% assign reading_name = page.repronim_reading_names[i] %}
                 <div class="item">
