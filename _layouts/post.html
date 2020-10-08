@@ -9,18 +9,6 @@ layout: main
         <div class="page-date"><span>{{page.date | date: '%b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
         <div class="row" align="left">
-            {% if page.livestream %}
-                <div class="smallhead">
-                    <a class="off" href="{{ page.livestream }}">Livestream Link</a>
-                </div>
-            {% else %}
-                <div class="smallhead subtle">
-                    Livestream Link (to be added)
-                </div>
-            {% endif %}
-
-            <div class="bigspacer"></div>
-
             {% if page.qa_doc %}
                 <div class="smallhead">
                     <a class="off" href="{{ page.qa_doc }}">Question & Answer Doc</a>
@@ -30,6 +18,21 @@ layout: main
                     Question & Answer Doc (to be added)
                 </div>
             {% endif %}
+
+            <div class="bigspacer"></div>
+
+            {% if page.livestream %}
+                <div class="smallhead">
+                    Observer students: <a class="off" href="{{ page.livestream }}">Instructor Question & Answer Livestream</a>
+                </div>
+            {% else %}
+                <div class="smallhead subtle">
+                    Observer students: Instructor Question & Answer Livestream (to be added)
+                </div>
+            {% endif %}
+            <div class="smallhead">
+                Enrolled students: please access the instructor Q & A via the Zoom link emailed to you
+            </div>
 
             <div class="bigspacer"></div>
 
