@@ -6,21 +6,29 @@ layout: main
     <div class="wrap-content">
       <header class="header-page">
         <h1 class="page-title">{{page.title}}</h1>
-        <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+        <div class="page-date"><span>{{page.date | date: '%b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
         <div class="row" align="left">
             {% if page.livestream %}
-            <a class="off" href="{{ page.livestream }}">Livestream Link</a>
+                <div class="smallhead subtle">
+                    <a class="off" href="{{ page.livestream }}">Livestream Link</a>
+                </div>
             {% else %}
-            Livestream Link (to be added)
+                <div class="smallhead subtle">
+                    Livestream Link (to be added)
+                </div>
             {% endif %}
 
             <div class="smallspacer"></div>
 
             {% if page.qa_doc %}
-            <a class="off" href="{{ page.qa_doc }}">Question & Answer Doc</a>
+                <div class="smallhead subtle">
+                    <a class="off" href="{{ page.qa_doc }}">Question & Answer Doc</a>
+                </div>
             {% else %}
-            Question & Answer Doc (to be added)
+                <div class="smallhead subtle">
+                    Question & Answer Doc (to be added)
+                </div>
             {% endif %}
         </div>
         <hr />
@@ -42,24 +50,41 @@ layout: main
             {% endif %}
 
             <div class="smallspacer"></div>
-            {% if page.abcd_readings %}
-            <a class="off" href="{{ page.abcd_slides }}">Lecture Slides PDF</a>
+            {% if page.abcd_slides %}
+                <i class="fa fa-file-pdf fa-fw"></i>
+                <a class="off" href="{{ page.abcd_slides }}">Lecture Slides PDF</a>
             {% else %}
-            Slides (to be added)
+                <div class="smallhead subtle">
+                    Slides (to be added)
+                </div>
             {% endif %}
 
             <div class="smallspacer"></div>
-            {% if page.abcd_readings %}
-            <a class="off" href="{{ page.abcd_readings }}">Readings</a>
+            {% if page.abcd_reading_links %}
+                <div class="smallhead subtle">
+                Readings
+                </div>
+                {% for i in (0..page.abcd_reading_links.size-1) %}
+                    {% assign reading_link = page.abcd_reading_links[i] %}
+                    {% assign reading_name = page.abcd_reading_names[i] %}
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-book fa-fw"></i>
+                    <a class="off" href="{{ reading_link }}">{{ reading_name }}</a>
+                    <div class="smallspacer"></div>
+                {% endfor %}
             {% else %}
-            Readings (to be added)
+                <div class="smallhead subtle">
+                    Readings (to be added)
+                </div>
             {% endif %}
 
             <div class="smallspacer"></div>
             {% if page.abcd_exercises %}
-            <a class="off" href="{{ page.abcd_exercises }}">Data Exercises</a>
+                <a class="off" href="{{ page.abcd_exercises }}">Data Exercises</a>
             {% else %}
-            Data Exercises (to be added)
+                <div class="smallhead subtle">
+                    Data Exercises (to be added)
+                </div>
             {% endif %}
         </div>
         <hr />
@@ -82,24 +107,40 @@ layout: main
             {% endif %}
 
             <div class="smallspacer"></div>
-            {% if page.repronim_readings %}
-            <a class="off" href="{{ page.repronim_slides }}">Lecture Slides PDF</a>
+            {% if page.repronim_slides %}
+                <a class="off" href="{{ page.repronim_slides }}">Lecture Slides PDF</a>
             {% else %}
-            Slides (to be added)
+                <div class="smallhead subtle">
+                    Slides (to be added)
+                </div>
             {% endif %}
 
             <div class="smallspacer"></div>
-            {% if page.abcd_readings %}
-            <a class="off" href="{{ page.abcd_readings }}">Readings</a>
+            {% if page.repronim_reading_links %}
+                <div class="smallhead subtle">
+                    Readings
+                </div>
+                {% for i in (0..page.repronim_reading_links.size-1) %}
+                {% assign reading_link = page.repronim_reading_links[i] %}
+                {% assign reading_name = page.repronim_reading_names[i] %}
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-book fa-fw"></i>
+                <a class="off" href="{{ reading_link }}">{{ reading_name }}</a>
+                <div class="smallspacer"></div>
+                {% endfor %}
             {% else %}
-            Readings (to be added)
+                <div class="smallhead subtle">
+                    Readings (to be added)
+                </div>
             {% endif %}
 
             <div class="smallspacer"></div>
-            {% if page.abcd_exercises %}
-            <a class="off" href="{{ page.abcd_exercises }}">Data Exercises</a>
+            {% if page.repronim_exercises %}
+                <a class="off" href="{{ page.repronim_exercises }}">Data Exercises</a>
             {% else %}
-            Data Exercises (to be added)
+                <div class="smallhead subtle">
+                    Data Exercises (to be added)
+                </div>
             {% endif %}
         </div>
     </div> <!-- End Wrap Content -->

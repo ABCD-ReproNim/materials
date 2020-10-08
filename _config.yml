@@ -1,6 +1,6 @@
 title: ABCD-ReproNim Course
 description: > # this means to ignore newlines until "baseurl:"
-  Course materials for the ABCD-ReproNim course.
+  Materials for the ABCD-ReproNim Course.
 permalink: ':title/'
 baseurl: "/materials" # the subpath of your site, e.g. /blog
 url: "http://abcd-repronim.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
