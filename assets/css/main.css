@@ -1479,3 +1479,37 @@ a.newer-posts:hover {
     font-size: 21px;
   }
 }
+
+/* Taylor's additions */
+.smallhead {
+	font-size: 19px;
+	font-weight: 300;
+    line-height: 23px;
+    color: #000000;
+}
+
+.smallhead a {
+    text-decoration: none;
+    color: black;
+    border-bottom: thin dotted;
+}
+
+.smallhead a:hover {
+    text-decoration: none;
+    border-bottom: thin solid;
+}
+
+.subtle {
+	color: #95a5a6;
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+    border-bottom: thin dotted;
+}
+
+.item a:hover {
+    text-decoration: none;
+    border-bottom: thin solid;
+}

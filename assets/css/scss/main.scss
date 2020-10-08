@@ -147,22 +147,3 @@ table tfoot td {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 @import 'media';
-
-/* Taylor's additions */
-.smallhead {
-	font-size: 19px;
-	font-weight: 300;
-	line-height: 23px;
-
-	a {
-		border-bottom: thin dotted;
-		&:hover {
-			text-decoration: none;
-			border-bottom: thin solid;
-		}
-	}
-}
-
-.subtle {
-	color: #95a5a6;
-}
