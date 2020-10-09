@@ -10,21 +10,8 @@ layout: main
       </header>
         <div class="row" align="left">
             <div class="smallhead">
-                ABCD-ReproNim Instructor Question & Answer Session: Friday {{page.date | date: '%b %d, %Y,'}} at 1pm EST (10am PST)
+                ABCD-ReproNim Instructor Question & Answer Session: {{page.date | date: '%A %b %d, %Y,'}} at 1pm EST (10am PST)
             </div>
-
-            <div class="bigspacer"></div>
-
-            {% if page.qa_doc %}
-                <div class="smallhead">
-                    <a class="off" href="{{ page.qa_doc }}">Q&A Doc</a>:
-                    Enter your questions here for discussion during the instructor Q&A session
-                </div>
-            {% else %}
-                <div class="smallhead subtle">
-                    Q&A Doc (to be added)
-                </div>
-            {% endif %}
 
             <div class="bigspacer"></div>
 
@@ -40,6 +27,19 @@ layout: main
             <div class="smallhead">
                 Enrolled students: please access the instructor Q&A via the Zoom link emailed to you
             </div>
+
+            <div class="bigspacer"></div>
+
+            {% if page.qa_doc %}
+                <div class="smallhead">
+                    <a class="off" href="{{ page.qa_doc }}">Q&A Doc</a>:
+                    Enter your questions here for discussion during the instructor Q&A session
+                </div>
+            {% else %}
+                <div class="smallhead subtle">
+                    Q&A Doc (to be added)
+                </div>
+            {% endif %}
 
             <div class="bigspacer"></div>
 
