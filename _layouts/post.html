@@ -17,27 +17,28 @@ layout: main
 
             {% if page.livestream %}
                 <div class="smallhead">
-                    Observer students: <a class="off" href="{{ page.livestream }}">Instructor Question & Answer Livestream</a>
+                    <b>Observer students</b>: <a class="off" href="{{ page.livestream }}">Instructor Question & Answer Livestream</a>
                 </div>
             {% else %}
                 <div class="smallhead subtle">
-                    Observer students: Instructor Question & Answer Livestream (to be added)
+                    <b>Observer students</b>: Instructor Question & Answer Livestream (to be added)
                 </div>
             {% endif %}
             <div class="smallhead">
-                Enrolled students: please access the instructor Q&A via the Zoom link emailed to you
+                <b>Enrolled students</b>: please access the instructor Q&A via the Zoom link emailed to you
             </div>
 
             <div class="bigspacer"></div>
 
             {% if page.qa_doc %}
                 <div class="smallhead">
-                    <a class="off" href="{{ page.qa_doc }}">Q&A Doc</a>:
-                    Enter your questions here for discussion during the instructor Q&A session
+                    <b><a class="off" href="{{ page.qa_doc }}">Q&A Doc</a></b>:
+                    Enter your questions here for discussion during the instructor Q&A session.
+                    This Google Doc will be closed <b>30 minutes</b> before the session starts.
                 </div>
             {% else %}
                 <div class="smallhead subtle">
-                    Q&A Doc (to be added)
+                    <b>Q&A Doc</b> (to be added)
                 </div>
             {% endif %}
 
@@ -45,15 +46,15 @@ layout: main
 
             {% if page.exercises %}
                 <div class="smallhead">
-                    Observer students: <a class="off" href="{{ page.exercises }}">Data Exercise</a>
+                    <b>Observer students</b>: <a class="off" href="{{ page.exercises }}">Data Exercise</a>
                 </div>
             {% else %}
                 <div class="smallhead subtle">
-                    Observer students: Data Exercise (to be added)
+                    <b>Observer students</b>: Data Exercise (to be added)
                 </div>
             {% endif %}
             <div class="smallhead">
-                Enrolled students: please access the data exercise via <a class="off" href="https://develop.fiu.edu/courses/abcd-repronim-course-reproducible-analyses-of-abcd-data">Canvas</a>
+                <b>Enrolled students</b>: please access the data exercise via <a class="off" href="https://develop.fiu.edu/courses/abcd-repronim-course-reproducible-analyses-of-abcd-data">Canvas</a>
             </div>
         </div>
         <div class="bigspacer"></div>
