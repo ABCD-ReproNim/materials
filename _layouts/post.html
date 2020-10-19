@@ -15,25 +15,38 @@ layout: main
 
             <div class="bigspacer"></div>
 
-            <div class="smallhead">
-                <b>Observer students</b>: <a class="off" href="http://webcast.fiu.edu">Instructor Q&A Webcast</a>
-            </div>
-            <div class="smallhead">
-                <b>Enrolled students</b>: please access the instructor Q&A via the Zoom link emailed to you
-            </div>
-
-            <div class="bigspacer"></div>
-
-            {% if page.qa_doc %}
+            {% if page.qa_video %}
                 <div class="smallhead">
-                    <b><a class="off" href="{{ page.qa_doc }}">Q&A Doc</a></b>:
-                    Enter your questions here for discussion during the instructor Q&A session.
-                    This Google Doc will be closed <b>30 minutes</b> before the session starts.
+                This week's Instructor Q&A session has been completed.
+                Please see the bottom of this page for the recording of the session.
+                </div>
+
+                <div class="bigspacer"></div>
+
+                <div class="smallhead">
+                <b><a class="off" href="{{ page.qa_doc }}">{{page.title}} Q&A Doc</a></b>: This document is frozen, but contains answers to the presubmitted Q&A.
                 </div>
             {% else %}
-                <div class="smallhead subtle">
-                    <b>Q&A Doc</b> (to be added)
+                <div class="smallhead">
+                    <b>Observer students</b>: <a class="off" href="http://webcast.fiu.edu">Instructor Q&A Webcast</a>
                 </div>
+                <div class="smallhead">
+                    <b>Enrolled students</b>: please access the instructor Q&A via the Zoom link emailed to you
+                </div>
+
+                <div class="bigspacer"></div>
+
+                {% if page.qa_doc %}
+                    <div class="smallhead">
+                        <b><a class="off" href="{{ page.qa_doc }}">Q&A Doc</a></b>:
+                        Enter your questions here for discussion during the instructor Q&A session.
+                        This Google Doc will be closed <b>30 minutes</b> before the session starts.
+                    </div>
+                {% else %}
+                    <div class="smallhead subtle">
+                        <b>Q&A Doc</b> (to be added)
+                    </div>
+                {% endif %}
             {% endif %}
 
             <div class="bigspacer"></div>
@@ -164,6 +177,22 @@ layout: main
                 </div>
             {% endif %}
         </div>
+        {% if page.qa_video %}
+        <div class="bigspacer"></div>
+        <hr />
+        <div class="row" align="left">
+            <h2 align="center">
+                Instructor Question and Answer Webcast Recording
+            </h2>
+
+            <div class="media">
+                <iframe width="560" height="315" src="{{ page.qa_video}}" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        {% endif %}
     </div> <!-- End Wrap Content -->
   </div> <!-- End Page Content -->
 </article> <!-- End Article Page -->
