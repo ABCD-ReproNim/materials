@@ -1021,6 +1021,10 @@ table tfoot td {
           align-items: stretch;
 }
 
+.contact {
+    text-align: center;
+}
+
 .contact .contact-title {
   position: relative;
   color: #333030;
@@ -1306,6 +1310,15 @@ a.newer-posts:hover {
   text-decoration: underline;
 }
 
+/* - - - - - - - - - - Sidebar Page Styles - - - - - - - - - - */
+.pagelink {
+  text-align: center;
+  font-family: 'Comic Sans MS', serif;
+  text-decoration: none;
+  color: #333030;
+}
+
+
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
   width: 100%;
@@ -1528,4 +1541,8 @@ a.newer-posts:hover {
 
 .smallspacer {
 	height: 5px;
+}
+
+.resources {
+    font-family: Comic Sans MS, serif;
 }

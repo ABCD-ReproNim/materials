@@ -2,17 +2,20 @@
 layout: main
 ---
 {% for post in paginator.posts reversed %}
-<article class="post">
-  {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
-  {% endif %}
-  <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.abcd_title }} / {{ post.repronim_title }}</p>
-    <span class="post-date">{{post.date | date: '%b %d %Y'}}</span>
-  </div>
-</article>
+    <!---to hide the resources page-->
+    {% if post.hidden != true %}
+        <article class="post">
+        {% if post.img %}
+            <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+        {% else %}
+        {% endif %}
+        <div class="post-content">
+            <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+            <p>{{ post.abcd_title }} / {{ post.repronim_title }}</p>
+            <span class="post-date">{{post.date | date: '%b %d %Y'}}</span>
+        </div>
+        </article>
+    {% endif %}
 {% endfor %}
 
 {% include pagination.html %}
