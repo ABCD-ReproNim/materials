@@ -13,6 +13,8 @@ tags: []
 
 [JupyterHub Instructions:](https://docs.google.com/document/d/1kXvK2c_N9TkIAYn21WfzlCPtJvxhjW13Ftf0DwnAnlg/edit?usp=sharing) What _is_ JupyterHub?
 
+<br/>
+
 ## Additional training
 
 [The Missing Semester of Your CS Education:](https://missing.csail.mit.edu) A lovely short-format course to get you caught up with computer science.

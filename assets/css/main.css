@@ -1313,7 +1313,7 @@ a.newer-posts:hover {
 /* - - - - - - - - - - Sidebar Page Styles - - - - - - - - - - */
 .pagelink {
   text-align: center;
-  font-family: 'Comic Sans MS', serif;
+  font-family: 'Lato', sans-serif;
   text-decoration: none;
   color: #333030;
 }
@@ -1544,5 +1544,5 @@ a.newer-posts:hover {
 }
 
 .resources {
-    font-family: Comic Sans MS, serif;
+    font-family: 'Lato', sans-serif;
 }
