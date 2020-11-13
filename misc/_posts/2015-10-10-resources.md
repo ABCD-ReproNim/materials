@@ -15,6 +15,14 @@ tags: []
 
 <br/>
 
+### For Windows users
+
+[Ubuntu on Windows:](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6) Use the Ubuntu terminal on Windows machines.
+
+[git for Windows:](https://gitforwindows.org/) Use `git` on Windows machines.
+
+<br/>
+
 ## Additional training
 
 [The Missing Semester of Your CS Education:](https://missing.csail.mit.edu) A lovely short-format course to get you caught up with computer science.
