@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: resources
 title: Preparatory Data Exercises for Project Week
 description: Data exercises for project week. # Add post description (optional)
 img:  # Add image post (optional)
