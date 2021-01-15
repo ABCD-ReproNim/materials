@@ -1,7 +1,7 @@
 ---
-layout: Project Week Data Exercises
+layout: post
 title: Preparatory Data Exercises for Project Week
-description:  # Add post description (optional)
+description: Data exercises for project week. # Add post description (optional)
 img:  # Add image post (optional)
 hidden: true
 tags: []
