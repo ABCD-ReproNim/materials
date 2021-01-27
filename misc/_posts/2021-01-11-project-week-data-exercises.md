@@ -13,9 +13,9 @@ tags: []
 
 <br/>
 
-## Part 3
+## Project Week Prep Data Exercise Part 3
 
-[Part 3 Project Week Prep Data Exercise):](https://docs.google.com/document/d/1eSnCMKoDLg2dDcMwBlfi-GKm5lFtqeeMvWv_hD-p5nk/edit?usp=sharing) The third installation of the Project Week data exercises explores correlations between the features you chose in Parts 1 & 2 using hierarchical clustering. Enrolled students should complete the assignment by copying and pasting the GitHub link to your code in the “Project Week Prep Data Exercise: Part 3” Assignment on [Canvas](https://develop.fiu.edu/courses/abcd-repronim-course-reproducible-analyses-of-abcd-data). Observer students should complete the assignment by copying and pasting the GitHub link to your code in this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd-0FHCRgzlpPM5nalr7RVUvAt4Vm7gTJD_FlWbSlJEaKgU8Q/viewform?usp=sf_link).
+[Project Week Prep Data Exercise: Part 3](https://docs.google.com/document/d/1eSnCMKoDLg2dDcMwBlfi-GKm5lFtqeeMvWv_hD-p5nk/edit?usp=sharing) The third installation of the Project Week data exercises explores correlations between features chosen in Parts 1 & 2 via hierarchical clustering. Enrolled students should complete the assignment by copying and pasting the GitHub link to your code in the “Project Week Prep Data Exercise: Part 3” Assignment on [Canvas](https://develop.fiu.edu/courses/abcd-repronim-course-reproducible-analyses-of-abcd-data). Observer students should complete the assignment by copying and pasting the GitHub link to your code in this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd-0FHCRgzlpPM5nalr7RVUvAt4Vm7gTJD_FlWbSlJEaKgU8Q/viewform?usp=sf_link).
 
 
 <br/>
