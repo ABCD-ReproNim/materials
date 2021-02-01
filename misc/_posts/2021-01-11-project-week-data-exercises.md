@@ -9,8 +9,15 @@ tags: []
 
 ## "Over-the-break" Data Exercise Parts 1 & 2
 
-[Parts 1 & 2 (the "Over-the-break" Data Exercise):](https://docs.google.com/document/d/1CRU5y3CGDYsaPv1FBkQhJ8ESTtem70RHQ1Q3AmVdOv0/edit) The first two installations of the Project Week data exercises! Enrolled students should complete the assignment by copying and pasting the GitHub link to your code in the “Over-the-Break Data Exercise: Parts 1 & 2” Assignment on [Canvas](https://develop.fiu.edu/courses/abcd-repronim-course-reproducible-analyses-of-abcd-data). Observer students should complete the assignment by copying and pasting the GitHub link to your code in this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSe537NZ0jD6pj52RctDIQPjOxiSQJQK53XNXI7YY-wZEAE7Cw/viewform?usp=sf_link).
+[Parts 1 & 2 (the "Over-the-break" Data Exercise):](https://docs.google.com/document/d/1CRU5y3CGDYsaPv1FBkQhJ8ESTtem70RHQ1Q3AmVdOv0/edit?usp=sharing) The first two installations of the Project Week data exercises! Enrolled students should complete the assignment by copying and pasting the GitHub link to your code in the “Over-the-Break Data Exercise: Parts 1 & 2” Assignment on [Canvas](https://develop.fiu.edu/courses/abcd-repronim-course-reproducible-analyses-of-abcd-data). Observer students should complete the assignment by copying and pasting the GitHub link to your code in this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSe537NZ0jD6pj52RctDIQPjOxiSQJQK53XNXI7YY-wZEAE7Cw/viewform?usp=sf_link).
 
 <br/>
 
-## Part 3 to be added
+## Project Week Prep Data Exercise Part 3
+
+[Project Week Prep Data Exercise: Part 3](https://docs.google.com/document/d/1eSnCMKoDLg2dDcMwBlfi-GKm5lFtqeeMvWv_hD-p5nk/edit?usp=sharing) The third installation of the Project Week data exercises explores correlations between features chosen in Parts 1 & 2 via hierarchical clustering. Enrolled students should complete the assignment by copying and pasting the GitHub link to your code in the “Project Week Prep Data Exercise: Part 3” Assignment on [Canvas](https://develop.fiu.edu/courses/abcd-repronim-course-reproducible-analyses-of-abcd-data). Observer students should complete the assignment by copying and pasting the GitHub link to your code in this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd-0FHCRgzlpPM5nalr7RVUvAt4Vm7gTJD_FlWbSlJEaKgU8Q/viewform?usp=sf_link).
+
+
+<br/>
+
+## Part 4 to be added
