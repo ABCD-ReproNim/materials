@@ -20,4 +20,6 @@ tags: []
 
 <br/>
 
-## Part 4 to be added
+## Project Week Prep Data Exercise Part 4
+
+[Project Week Prep Data Exercise: Part 4](https://github.com/ABCD-ReproNim/exercises/blob/main/break/downloadMRI.md) The fourth and final installation of the Project Week data exercises presents a step-by-step tutorial of how to download the full set of MRI images from the ABCD 3.0 data release. Enrolled students should complete the assignment by working through this tutorial and then completing “Project Week Prep Data Exercise: Part 4” Assignment on [Canvas](https://develop.fiu.edu/courses/abcd-repronim-course-reproducible-analyses-of-abcd-data). Observer students should complete the assignment by working through the tutorial and answering the questions on this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScauXU9maglwybq4VRxzy5QUtHCRVu1uz4jOJZp3dpQLzJh6A/viewform?usp=sf_link).
