@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-{% for post in paginator.posts reversed %}
+{% for post in paginator.posts %}
     <!---to hide the resources page-->
     {% if post.hidden != true %}
         <article class="post">
@@ -11,7 +11,11 @@ layout: main
         {% endif %}
         <div class="post-content">
             <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-            <p>{{ post.abcd_title }} / {{ post.repronim_title }}</p>
+            {% if post.abcd_title %}
+                <p>{{ post.abcd_title }} / {{ post.repronim_title }}</p>
+            {% else %}
+                <p>{{ post.description }}</p>
+            {% endif %}
             <span class="post-date">{{post.date | date: '%b %d %Y'}}</span>
         </div>
         </article>
