@@ -14,7 +14,7 @@ Check out the proposed projects [here](https://github.com/ABCD-ReproNim/projects
 
 • Our virtual meeting place for Project Week will be on [Gather.Town](https://gather.town/app/vC4xzIIrfbFvptPB/abcd-repronim). The password to join has been emailed to you. Feel free to use this space to meet with your project team as needed or to virtually hang out with others during the week (there's a game room!) All presentations will be held in the lecture hall marked as room 400 in the Gather.Town space. The lecture hall is located all the way to the right of your screen when you enter.
 
-• Project teams will be communicating primarily via private channels in the [ABCD-ReproNim Slack](http://abcd-repronim.slack.com). If you are attending Project Week please [send us a message](mailto:info@abcd-repronim.org) so that we can add you to the
+• Project teams will be communicating primarily via private channels in the [ABCD-ReproNim Slack](http://abcd-repronim.slack.com). If you are attending Project Week please [send us a message](mailto:info@abcd-repronim.org) so that we can add you to the appropriate Project Week Slack channels.
 
 • Please check out our [Project Week Outline](https://docs.google.com/document/d/1y5RqRw_ow7O3hTgwFBBsa6T9NaczIDwNM35qcRrw8fk/edit?usp=sharing) and [Project Week FAQ](https://docs.google.com/document/d/1fGYlcQQBqxsoEMnD3al1cKg1Zz0dXGY0thmcrRRYydc/edit?usp=sharing) for more information about Project Weekl
 
