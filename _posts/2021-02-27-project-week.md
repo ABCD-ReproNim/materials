@@ -8,6 +8,9 @@ img: project_week.jpg # Add image post (optional)
 
 Check out the proposed projects [here](https://github.com/ABCD-ReproNim/projects/issues)! Please note that only individuals who have obtained [ABCD data access](https://docs.google.com/document/d/18hsT2x15bypuXFcfMQb9Ck_YEB7VvY2j4w5hwbV78A4/edit?usp=sharing) and have provided us with confirmation of their Data Use Certifications (DUCs) will be able to participate in Project Week.
 
+**Project Week Kickoff***
+If you missed the kickoff for Project Week you can view a recording of the event [here](https://www.youtube.com/embed/zTOleP0JIqo)
+
 **Project Week Schedule:** The schedule for Project Week can be found on the [ABCD-ReproNim Google Calendar](https://calendar.google.com/calendar?cid=YWJjZHJlcHJvbmltQGdtYWlsLmNvbQ). You can also view a detailed description of events on the [Project Week Outline](https://docs.google.com/document/d/1y5RqRw_ow7O3hTgwFBBsa6T9NaczIDwNM35qcRrw8fk/edit?usp=sharing)
 
 **Resources for Project Week:**
