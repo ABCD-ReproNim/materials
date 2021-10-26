@@ -9,8 +9,10 @@ layout: main
         <div class="page-date"><span>{{page.date | date: '%b %d %Y'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
         <div class="row" align="left">
+          <!-- Term formatting section -->
+          {% if page.term %}<!-- 2022 course term -->
             <div class="smallhead">
-                ABCD-ReproNim Instructor Question & Answer Session: {{page.date | date: '%A %b %d, %Y,'}} at 1pm EST (10am PST)
+                {{page.header-text}}
             </div>
 
             <div class="bigspacer"></div>
@@ -24,18 +26,24 @@ layout: main
 
                 <div class="bigspacer"></div>
 
+
                 <div class="smallhead">
-                <b>{{page.title}} Q&A Doc</b>: Click <a class="off" href="{{ page.qa_doc }}">here</a> for answers to the Q&A Doc.
+                    <b>Assignments</b>: <a class="off" href="{{ page.exercises }}">Data Exercise</a>
                 </div>
             {% else %}
-                <div class="smallhead">
-                    <b>Observer students</b>: <a class="off" href="http://webcast.fiu.edu">Instructor Q&A Webcast</a>
+                <div class="smallhead subtle">
+                    <b>Assignments</b>: Data Exercise (to be added)
                 </div>
-                <div class="smallhead">
-                    <b>Enrolled students</b>: please access the instructor Q&A via the Zoom link emailed to you
-                </div>
+            {% endif %}
+        </div>
+        <div class="bigspacer"></div>
+        <hr />
+            <!-- End 2022 assignments formatting section -->
 
-                <div class="bigspacer"></div>
+          {% else %}<!-- 2020/2021 course term -->
+            <div class="smallhead">
+                ABCD-ReproNim Instructor Question & Answer Session: {{page.date | date: '%A %b %d, %Y,'}} at 1pm EST (10am PST)
+            </div>
 
                 {% if page.qa_doc %}
                     <div class="smallhead">
@@ -50,6 +58,7 @@ layout: main
                 {% endif %}
             {% endif %}
             <!-- End Q&A info formatting section -->
+
 
             <div class="bigspacer"></div>
 
