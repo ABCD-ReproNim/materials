@@ -10,15 +10,49 @@ layout: main
       </header>
         <div class="row" align="left">
 
-      <!-- Begin Term conditional Content
+      <!-- Begin Term conditional Content -->
         {% if page.term %}
+            <!-- Begin Header Description Content -->
             <div class="smallhead">
-                <b>{{page.title}}</b>:: {{page.detailed-description}}
+                <b>{{page.title}}</b>: {{page.detailed-description}}
             </div>
 
             <div class="bigspacer"></div>
+            <div class="smallhead">
+                <b>Help and Resources</b>: If you have questions about this week's material please post them to the <a class="off" href="https://neurostars.org/c/abcd-repronim/232"> ABCD-ReproNim Neurostars</a>.
+            </div>
+            <div class="bigspacer"></div>
+            <!-- End Header Description Content -->
 
-        {% else %} -->
+            <!-- Begin Exercises conditional Content -->
+            {% if page.assignment_links %}
+                    <div class="smallhead">
+                    <b>{{page.title}} Assignments</b>:
+                    </div>
+                    {% assign n_assignments = page.assignment_links.size | minus: 1 %}
+                    {% for i in (0..n_assignments) %}
+                        {% assign assignment_link = page.assignment_links[i] %}
+                        {% assign assignment_name = page.assignment_names[i] %}
+                        <div class="item">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa fa-book fa-fw"></i>
+                        <a class="off" href="{{ assignment_link }}">{{ assignment_name }}</a>
+                        </div>
+                        <div class="smallspacer"></div>
+                    {% endfor %}
+                {% else %}
+                    <div class="smallhead subtle">
+                        <b>Assignments</b>: Data Exercise (to be added). Please see the <a class="off" href="{{ page.exercises }}"> 2020 Course Data Exercise</a>.
+                    </div>
+                {% endif %}
+                <!-- End Exercises conditional Content -->
+
+        </div>
+        <div class="bigspacer"></div>
+        <hr />
+            <!-- End Exercises conditional Content -->
+
+        {% else %}
           <!-- Begin Q&A conditional Content -->
             <div class="smallhead">
                 ABCD-ReproNim Instructor Question & Answer Session: {{page.date | date: '%A %b %d, %Y,'}} at 1pm EST (10am PST)
@@ -81,7 +115,7 @@ layout: main
         <hr />
         <!-- End Exercises conditional Content -->
 
-        <!-- {% endif %} -->
+        {% endif %}
     <!-- End Term conditional Content -->
 
         {% if page.content.size > 1 %}
