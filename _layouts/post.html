@@ -10,7 +10,7 @@ layout: main
       </header>
         <div class="row" align="left">
 
-      <!-- Begin Term conditional Content -->
+      <!-- Begin Term conditional Content
         {% if page.term %}
             <div class="smallhead">
                 <b>{{page.title}}</b>:: {{page.detailed-description}}
@@ -18,7 +18,7 @@ layout: main
 
             <div class="bigspacer"></div>
 
-        {% else %}
+        {% else %} -->
           <!-- Begin Q&A conditional Content -->
             <div class="smallhead">
                 ABCD-ReproNim Instructor Question & Answer Session: {{page.date | date: '%A %b %d, %Y,'}} at 1pm EST (10am PST)
@@ -81,7 +81,7 @@ layout: main
         <hr />
         <!-- End Exercises conditional Content -->
 
-        {% endif %}
+        <!-- {% endif %} -->
     <!-- End Term conditional Content -->
 
         {% if page.content.size > 1 %}
