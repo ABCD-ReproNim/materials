@@ -1,7 +1,8 @@
 ---
 layout: main
 ---
-{% for post in paginator.posts %}
+{% for post in paginator.posts reversed %}
+
     <!---to hide the resources page-->
     {% if post.hidden != true %}
         <article class="post">

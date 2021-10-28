@@ -2,7 +2,9 @@
 layout: post
 title: Week X
 date: 2019-10-16 12:00:00
+term:
 description: Week X course materials # Add post description (optional)
+detailed-description:
 img: weekxx.jpg # Add image post (optional)
 
 abcd_title:
@@ -19,5 +21,7 @@ repronim_reading_names:
 
 qa_doc:
 exercises:
+assignment_links:
+assignment_names:
 qa_video:
 ---
