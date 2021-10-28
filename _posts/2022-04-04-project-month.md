@@ -1,10 +1,15 @@
 ---
 layout: resources
-title: Project Week
-date: 2021-03-08 12:00:00
-description: Project Week # Add post description (optional)
-img: project_week.jpg # Add image post (optional)
+title: Project Month
+date: 2022-04-04 12:00:00
+term: second
+description: Project Month # Add post description (optional)
+img: project_month.jpg # Add image post (optional)
 ---
+
+The ABCD-ReproNim Project Month will be held virtually on April 4 - April 29, 2022. More information on Project Month coming soon!
+
+<!---
 
 Check out the proposed projects [here](https://github.com/ABCD-ReproNim/projects/issues)! Please note that only individuals who have obtained [ABCD data access](https://docs.google.com/document/d/18hsT2x15bypuXFcfMQb9Ck_YEB7VvY2j4w5hwbV78A4/edit?usp=sharing) and have provided us with confirmation of their Data Use Certifications (DUCs) will be able to participate in Project Week.
 
@@ -19,3 +24,5 @@ Check out the proposed projects [here](https://github.com/ABCD-ReproNim/projects
 • Please check out our [Project Week Outline](https://docs.google.com/document/d/1y5RqRw_ow7O3hTgwFBBsa6T9NaczIDwNM35qcRrw8fk/edit?usp=sharing) and [Project Week FAQ](https://docs.google.com/document/d/1fGYlcQQBqxsoEMnD3al1cKg1Zz0dXGY0thmcrRRYydc/edit?usp=sharing) for more information about Project Weekl
 
 • [Here](https://docs.google.com/presentation/d/1yaISzpru7dApTVccquoJDVZxbryuiSyHnMLNUR5McTM/edit?usp=sharing) is a presentation about what to expect and how to prepare.
+
+--->

@@ -9,6 +9,51 @@ layout: main
         <div class="page-date"><span>{{page.date | date: '%b %d %Y'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
         <div class="row" align="left">
+
+      <!-- Begin Term conditional Content -->
+        {% if page.term %}
+            <!-- Begin Header Description Content -->
+            <div class="smallhead">
+                <b>{{page.title}}</b>: {{page.detailed-description}}
+            </div>
+
+            <div class="bigspacer"></div>
+            <div class="smallhead">
+                <b>Help and Resources</b>: If you have questions about this week's material please post them to the <a class="off" href="https://neurostars.org/c/abcd-repronim/232"> ABCD-ReproNim Neurostars</a>.
+            </div>
+            <div class="bigspacer"></div>
+            <!-- End Header Description Content -->
+
+            <!-- Begin Exercises conditional Content -->
+            {% if page.assignment_links %}
+                    <div class="smallhead">
+                    <b>{{page.title}} Assignments</b>:
+                    </div>
+                    {% assign n_assignments = page.assignment_links.size | minus: 1 %}
+                    {% for i in (0..n_assignments) %}
+                        {% assign assignment_link = page.assignment_links[i] %}
+                        {% assign assignment_name = page.assignment_names[i] %}
+                        <div class="item">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa fa-book fa-fw"></i>
+                        <a class="off" href="{{ assignment_link }}">{{ assignment_name }}</a>
+                        </div>
+                        <div class="smallspacer"></div>
+                    {% endfor %}
+                {% else %}
+                    <div class="smallhead subtle">
+                        <b>Assignments</b>: Data Exercise (to be added). Please see the <a class="off" href="{{ page.exercises }}"> 2020 Course Data Exercise</a>.
+                    </div>
+                {% endif %}
+                <!-- End Exercises conditional Content -->
+
+        </div>
+        <div class="bigspacer"></div>
+        <hr />
+            <!-- End Exercises conditional Content -->
+
+        {% else %}
+          <!-- Begin Q&A conditional Content -->
             <div class="smallhead">
                 ABCD-ReproNim Instructor Question & Answer Session: {{page.date | date: '%A %b %d, %Y,'}} at 1pm EST (10am PST)
             </div>
@@ -50,7 +95,9 @@ layout: main
             {% endif %}
 
             <div class="bigspacer"></div>
+            <!-- End Q&A conditional Content -->
 
+            <!-- Begin Exercises conditional Content -->
             {% if page.exercises %}
                 <div class="smallhead">
                     <b>Observer students</b>: <a class="off" href="{{ page.exercises }}">Data Exercise</a>
@@ -66,6 +113,11 @@ layout: main
         </div>
         <div class="bigspacer"></div>
         <hr />
+        <!-- End Exercises conditional Content -->
+
+        {% endif %}
+    <!-- End Term conditional Content -->
+
         {% if page.content.size > 1 %}
             <div class="row" align="left">
                 <div class="smallhead">
@@ -74,6 +126,8 @@ layout: main
                 <hr />
             </div>
         {% endif %}
+
+        <!-- Begin ABCD Lecture Content -->
         <div class="row" align="left">
             <h2 align="center">
                 ABCD Lecture: {{ page.abcd_title }}
@@ -130,6 +184,9 @@ layout: main
         </div>
         <div class="bigspacer"></div>
         <hr />
+        <!-- End ABCD Lecture Content -->
+
+        <!-- Begin ReproNim Lecture Content -->
         <div class="row" align="left">
             <h2 align="center">
                 ReproNim Lecture: {{ page.repronim_title }}
@@ -188,6 +245,9 @@ layout: main
         {% if page.qa_video %}
         <div class="bigspacer"></div>
         <hr />
+        <!-- End ReproNim Lecture Content -->
+
+        <!-- Begin Q&A Lecture Content -->
         <div class="row" align="left">
             <h2 align="center">
                 Instructor Question and Answer Webcast Recording
@@ -199,8 +259,21 @@ layout: main
                     allowfullscreen>
                 </iframe>
             </div>
+            <div class="bigspacer"></div>
+
+            {% if page.qa_doc %}
+                <div class="smallhead">
+                <b>{{page.title}} Q&A Doc</b>: Click <a class="off" href="{{ page.qa_doc }}">here</a> for written answers to the Q&A Doc.
+                </div>
+            {% else %}
+                <div class="smallhead subtle">
+                    Q&A Doc transcript (to be added)
+                </div>
+            {% endif %}
+
         </div>
         {% endif %}
+        <!-- End Q&A Lecture Content -->
     </div> <!-- End Wrap Content -->
   </div> <!-- End Page Content -->
 </article> <!-- End Article Page -->
