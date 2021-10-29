@@ -1,0 +1,51 @@
+---
+layout: main
+---
+{% assign old_posts = "" | split: "" %}
+{% for post in site.posts %}
+  <!---all pages with a "term" attribute less than the current one-->
+  {% if post.term < site.current_term %}
+    {% assign old_posts = old_posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% assign terms = "" | split: "" %}
+{% for post in old_posts %}
+  {% assign terms = terms | push: post.term %}
+{% endfor %}
+{% assign terms = terms | uniq %}
+
+{% for term in terms %}
+    <h1>Term {{ term }}</h1>
+
+	<div class="bigspacer"></div>
+
+	{% assign term_posts = "" | split: "" %}
+	{% for post in old_posts %}
+		{% if post.term == term %}
+		  {% assign term_posts = term_posts | push: post %}
+		{% endif %}
+	{% endfor %}
+
+    {% for post in term_posts reversed %}
+        <article class="post">
+            <a class="post-thumbnail" style="background-image: url({{'/assets/img/' | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+
+            <div class="post-content">
+                <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+                {% if post.abcd_title %}
+                    <p>{{ post.abcd_title }} / {{ post.repronim_title }}</p>
+                {% else %}
+                    <p>{{ post.description }}</p>
+                {% endif %}
+                <span class="post-date">{{post.date | date: '%b %d %Y'}}</span>
+            </div>
+        </article>
+    {% endfor %}
+
+	<div class="bigspacer"></div>
+
+	{% if term != terms[-1] %}
+		<hr/>
+	{% endif %}
+{% endfor %}
