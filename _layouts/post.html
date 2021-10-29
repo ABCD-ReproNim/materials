@@ -8,10 +8,10 @@ layout: main
         <h1 class="page-title">{{page.title}}</h1>
         <div class="page-date"><span>{{page.date | date: '%b %d %Y'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
-        <div class="row" align="left">
+      <div class="row" align="left">
 
-      <!-- Begin Term conditional Content -->
-        {% if page.term %}
+        <!-- Begin Term conditional Content -->
+        {% if page.term == site.current_term %}
             <!-- Begin Header Description Content -->
             <div class="smallhead">
                 <b>{{page.title}}</b>: {{page.detailed-description}}
