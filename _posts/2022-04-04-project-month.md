@@ -2,7 +2,7 @@
 layout: resources
 title: Project Month
 date: 2022-04-04 12:00:00
-term: second
+term: 2
 description: Project Month # Add post description (optional)
 img: project_month.jpg # Add image post (optional)
 ---
