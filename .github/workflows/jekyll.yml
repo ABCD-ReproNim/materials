@@ -28,5 +28,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: my-artifact
-        path: ${{ github.workspace }}/build/index.html
+        name: built-site
+        path: ${{ github.workspace }}/build/
