@@ -41,9 +41,15 @@ layout: main
                         <div class="smallspacer"></div>
                     {% endfor %}
                 {% else %}
-                    <div class="smallhead subtle">
-                        <b>Assignments</b>: Data Exercise (to be added). Please see the <a class="off" href="https://abcd-repronim.github.io/materials/past-materials/" target="_blank" rel="noopener noreferrer"> 2020 Course Data Exercise</a>.
-                    </div>
+                  {% if post.coursetype == site.coursetype %}
+                      <div class="smallhead subtle">
+                          <b>Assignments</b>: Data Exercise (to be added). Please see the <a class="off" href="https://abcd-repronim.github.io/materials/past-materials/" target="_blank" rel="noopener noreferrer"> 2020 Course Data Exercise</a>.
+                      </div>
+                  {% else %}
+                  <div class="smallhead subtle">
+                      <b>Assignments</b>: Data Exercise (to be added).
+                  </div>
+                  {% endif %}
                 {% endif %}
                 <!-- End Exercises conditional Content -->
 
@@ -128,7 +134,7 @@ layout: main
         {% endif %}
 
         <!-- Begin coursetype (Main Course or AI/ML Course) conditional Content -->
-        {% if post.coursetype == site.coursetype %}
+        {% if post.coursetype == "maincourse" %}
 
         <!-- Begin ABCD Lecture Content -->
         <div class="row" align="left">
@@ -345,9 +351,101 @@ layout: main
         <hr />
         <!-- End ABCD Lecture Content -->
 
+        <!-- Begin Lecture 2 Lecture Content -->
+        <div class="row" align="left">
+            <h2 align="center">
+                Lecture 2: {{ page.B_title }}
+            </h2>
 
+            {% if page.B_video %}
+                {% for video in page.B_video %}
+                    <div class="media">
+                        <iframe width="560" height="315" src="{{ video }}?cc_load_policy=1&cc_lang_pref=en" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                {% endfor %}
+            {% else %}
+            <img src="{{site.baseurl}}/assets/img/video-placeholder.png" width="560" height="315">
+            {% endif %}
 
+            <div class="bigspacer"></div>
 
+            {% if page.B_slides %}
+                {% for slideset in page.B_slides %}
+                    <div class="smallhead">
+                        <a class="off" href="{{ slideset }}" target="_blank" rel="noopener noreferrer">Lecture Slides PDF</a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="smallhead subtle">
+                    Slides (to be added)
+                </div>
+            {% endif %}
+
+            <div class="bigspacer"></div>
+
+            {% if page.B_reading_links %}
+                <div class="smallhead">
+                    Readings
+                </div>
+                {% assign n_readings = page.B_reading_links.size | minus: 1 %}
+                {% for i in (0..n_readings) %}
+                {% assign reading_link = page.B_reading_links[i] %}
+                {% assign reading_name = page.B_reading_names[i] %}
+                <div class="item">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-book fa-fw"></i>
+                <a class="off" href="{{ reading_link }}" target="_blank" rel="noopener noreferrer">{{ reading_name }}</a>
+                </div>
+                <div class="smallspacer"></div>
+                {% endfor %}
+            {% else %}
+                <div class="smallhead subtle">
+                    Readings (to be added)
+                </div>
+            {% endif %}
+            <!-- End ReproNim Lecture Content -->
+
+            <!-- Begin Q&A Lecture Content -->
+        </div>
+        {% if page.qa_video %}
+        <div class="bigspacer"></div>
+        <hr />
+                <div class="row" align="left">
+                    <h2 align="center">
+                        Instructor Question and Answer Webcast Recording
+                    </h2>
+
+                    <h4 align="center">
+                        Recorded in 2020. Note that course-related announcement made during this recording may be out of date. Please see the top of this page for 2022 Course announcements.
+                    </h4>
+
+                    <div class="media">
+                        <iframe width="560" height="315" src="{{ page.qa_video}}?cc_load_policy=1&cc_lang_pref=en" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="bigspacer"></div>
+
+                    {% if page.qa_doc %}
+                        <div class="smallhead">
+                        <b>{{page.title}} Q&A Doc</b>: Click <a class="off" href="{{ page.qa_doc }}" target="_blank" rel="noopener noreferrer">here</a> for written answers to the Q&A Doc.
+                        </div>
+                    {% else %}
+                        <div class="smallhead subtle">
+                            Q&A Doc transcript (to be added)
+                        </div>
+                    {% endif %}
+
+                </div>
+                {% endif %}
+
+                </div>
+                <div class="bigspacer"></div>
+                <hr />
 
         {% endif %}
         <!-- End coursetype (Main Course or AI/ML Course) conditional Content -->
