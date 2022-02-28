@@ -149,6 +149,7 @@ layout: main
           {% endif %}
           <!-- End coursetype (Main Course or AI/ML Course) conditional Content -->
 
+
             {% if page.abcd_video %}
                 {% for video in page.abcd_video %}
                     <div class="media">
@@ -158,19 +159,7 @@ layout: main
                     </div>
                 {% endfor %}
             {% else %}
-              <!-- Begin coursetype (Main Course or AI/ML Course) conditional Content -->
-              {% if post.coursetype == "aiml" %}
-                  {% for video in page.A_video %}
-                      <div class="media">
-                          <iframe width="560" height="315" src="{{ video }}?cc_load_policy=1&cc_lang_pref=en" frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                      </div>
-                  {% endfor %}
-              {% else %}
-                  <img src="{{site.baseurl}}/assets/img/video-placeholder.png" width="560" height="315">
-              {% endif %}
-              <!-- End coursetype (Main Course or AI/ML Course) conditional Content -->
+            <img src="{{site.baseurl}}/assets/img/video-placeholder.png" width="560" height="315">
             {% endif %}
 
             <div class="bigspacer"></div>
