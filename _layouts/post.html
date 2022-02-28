@@ -134,7 +134,7 @@ layout: main
         {% endif %}
 
         <!-- Begin coursetype (Main Course or AI/ML Course) conditional Content -->
-        {% if post.coursetype == "maincourse" %}
+  <!--         {% if post.coursetype == "maincourse" %}-->
 
         <!-- Begin ABCD Lecture Content -->
         <div class="row" align="left">
@@ -291,9 +291,11 @@ layout: main
         <div class="bigspacer"></div>
         <hr />
 
+<!--
         {% else %}
+-->
         <!-- Begin Lecture 1 Content -->
-        <div class="row" align="left">
+<!--        <div class="row" align="left">
             <h2 align="center">
                 Lecture 1: {{ page.A_title }}
             </h2>
@@ -350,9 +352,9 @@ layout: main
         <div class="bigspacer"></div>
         <hr />
         <!-- End ABCD Lecture Content -->
-
+-->
         <!-- Begin Lecture 2 Lecture Content -->
-        <div class="row" align="left">
+<!--        <div class="row" align="left">
             <h2 align="center">
                 Lecture 2: {{ page.B_title }}
             </h2>
@@ -407,9 +409,9 @@ layout: main
                 </div>
             {% endif %}
             <!-- End ReproNim Lecture Content -->
-
+-->
             <!-- Begin Q&A Lecture Content -->
-        </div>
+<!--         </div>
         {% if page.qa_video %}
         <div class="bigspacer"></div>
         <hr />
@@ -449,6 +451,7 @@ layout: main
 
         {% endif %}
         <!-- End coursetype (Main Course or AI/ML Course) conditional Content -->
+ -->
 
         <!-- Begin Links and Platforms Content -->
         <div class="smallhead">
