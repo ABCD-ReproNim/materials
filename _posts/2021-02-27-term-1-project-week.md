@@ -3,6 +3,7 @@ layout: resources
 title: Course Year 1 Project Week
 date: 2021-03-08 12:00:00
 term: 1
+coursetype: maincourse
 description: Project Week # Add post description (optional)
 img: project_week.jpg # Add image post (optional)
 ---
