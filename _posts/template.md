@@ -3,6 +3,7 @@ layout: post
 title: Week X
 date: 2019-10-16 12:00:00
 term:
+coursetype:
 description: Week X course materials # Add post description (optional)
 detailed-description:
 img: weekxx.jpg # Add image post (optional)
