@@ -164,9 +164,17 @@ layout: main
                     </div>
                 {% endfor %}
             {% else %}
-                <div class="smallhead subtle">
-                    Slides (to be added)
-                </div>
+                {% if page.A_slides %}
+                    {% for slideset in page.A_slides %}
+                        <div class="smallhead">
+                            <a class="off" href="{{ slideset }}" target="_blank" rel="noopener noreferrer">Lecture Slides PDF</a>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="smallhead subtle">
+                        Slides (to be added)
+                    </div>
+                {% endif %}
             {% endif %}
 
             <div class="bigspacer"></div>
@@ -187,9 +195,26 @@ layout: main
                     <div class="smallspacer"></div>
                 {% endfor %}
             {% else %}
-                <div class="smallhead subtle">
-                    Readings (to be added)
-                </div>
+                {% if page.A_reading_links %}
+                    <div class="smallhead">
+                    Readings
+                    </div>
+                    {% assign n_readings = page.A_reading_links.size | minus: 1 %}
+                    {% for i in (0..n_readings) %}
+                        {% assign reading_link = page.A_reading_links[i] %}
+                        {% assign reading_name = page.A_reading_names[i] %}
+                        <div class="item">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa fa-book fa-fw"></i>
+                        <a class="off" href="{{ reading_link }}" target="_blank" rel="noopener noreferrer">{{ reading_name }}</a>
+                        </div>
+                        <div class="smallspacer"></div>
+                    {% endfor %}
+                {% else %}
+                    <div class="smallhead subtle">
+                        Readings (to be added)
+                    </div>
+                {% endif %}
             {% endif %}
         </div>
         <div class="bigspacer"></div>
