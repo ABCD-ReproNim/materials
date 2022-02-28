@@ -136,7 +136,7 @@ layout: main
         {% else %}
         <div class="row" align="left">
             <h2 align="center">
-                AI/ML Lecture 1: {{ page.A_title }}
+                AI/ML Lecture: {{ page.A_title }}
             </h2>
         {% endif %}
 
@@ -229,10 +229,18 @@ layout: main
         <!-- End ABCD Lecture Content -->
 
         <!-- Begin ReproNim Lecture Content -->
+        {% if page.abcd_title %}
         <div class="row" align="left">
             <h2 align="center">
                 ReproNim Lecture: {{ page.repronim_title }}
             </h2>
+        {% else %}
+        <div class="row" align="left">
+            <h2 align="center">
+                AI/ML Lecture: {{ page.B_title }}
+            </h2>
+        {% endif %}
+
 
             {% if page.repronim_video %}
                 {% for video in page.repronim_video %}
@@ -244,7 +252,17 @@ layout: main
                     </div>
                 {% endfor %}
             {% else %}
-            <img src="{{site.baseurl}}/assets/img/video-placeholder.png" width="560" height="315">
+                {% if page.B_video %}
+                    {% for video in page.B_video %}
+                        <div class="media">
+                            <iframe width="560" height="315" src="{{ video }}?cc_load_policy=1&cc_lang_pref=en" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <img src="{{site.baseurl}}/assets/img/video-placeholder.png" width="560" height="315">
+                {% endif %}
             {% endif %}
 
             <div class="bigspacer"></div>
