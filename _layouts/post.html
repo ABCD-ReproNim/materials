@@ -41,9 +41,15 @@ layout: main
                         <div class="smallspacer"></div>
                     {% endfor %}
                 {% else %}
-                    <div class="smallhead subtle">
-                        <b>Assignments</b>: Data Exercise (to be added). Please see the <a class="off" href="https://abcd-repronim.github.io/materials/past-materials/" target="_blank" rel="noopener noreferrer"> 2020 Course Data Exercise</a>.
-                    </div>
+                  {% if post.coursetype == site.coursetype %}
+                      <div class="smallhead subtle">
+                          <b>Assignments</b>: Data Exercise (to be added). Please see the <a class="off" href="https://abcd-repronim.github.io/materials/past-materials/" target="_blank" rel="noopener noreferrer"> 2020 Course Data Exercise</a>.
+                      </div>
+                  {% else %}
+                  <div class="smallhead subtle">
+                      <b>Assignments</b>: Data Exercise (to be added).
+                  </div>
+                  {% endif %}
                 {% endif %}
                 <!-- End Exercises conditional Content -->
 
