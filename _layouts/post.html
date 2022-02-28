@@ -274,9 +274,17 @@ layout: main
                     </div>
                 {% endfor %}
             {% else %}
-                <div class="smallhead subtle">
-                    Slides (to be added)
-                </div>
+                {% if page.B_slides %}
+                    {% for slideset in page.B_slides %}
+                        <div class="smallhead">
+                            <a class="off" href="{{ slideset }}" target="_blank" rel="noopener noreferrer">Lecture Slides PDF</a>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="smallhead subtle">
+                        Slides (to be added)
+                    </div>
+                {% endif %}
             {% endif %}
 
             <div class="bigspacer"></div>
