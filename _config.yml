@@ -39,4 +39,4 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 current_term: 2
 
 # What is the current coursetype
-coursetype: maincourse
+coursetype: 2
