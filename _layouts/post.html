@@ -127,9 +127,6 @@ layout: main
             </div>
         {% endif %}
 
-        <!-- Begin coursetype (Main Course or AI/ML Course) conditional Content -->
-        {% if post.coursetype == site.coursetype %}
-
         <!-- Begin ABCD Lecture Content -->
         <div class="row" align="left">
             <h2 align="center">
@@ -284,73 +281,6 @@ layout: main
         </div>
         <div class="bigspacer"></div>
         <hr />
-
-        {% else %}
-        <!-- Begin Lecture 1 Content -->
-        <div class="row" align="left">
-            <h2 align="center">
-                Lecture 1: {{ page.A_title }}
-            </h2>
-
-            {% if page.A_video %}
-                {% for video in page.A_video %}
-                    <div class="media">
-                        <iframe width="560" height="315" src="{{ video }}?cc_load_policy=1&cc_lang_pref=en" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                {% endfor %}
-            {% else %}
-            <img src="{{site.baseurl}}/assets/img/video-placeholder.png" width="560" height="315">
-            {% endif %}
-
-            <div class="bigspacer"></div>
-
-            {% if page.A_slides %}
-                {% for slideset in page.A_slides %}
-                    <div class="smallhead">
-                        <a class="off" href="{{ slideset }}" target="_blank" rel="noopener noreferrer">Lecture Slides PDF</a>
-                    </div>
-                {% endfor %}
-            {% else %}
-                <div class="smallhead subtle">
-                    Slides (to be added)
-                </div>
-            {% endif %}
-
-            <div class="bigspacer"></div>
-
-            {% if page.A_reading_links %}
-                <div class="smallhead">
-                Readings
-                </div>
-                {% assign n_readings = page.A_reading_links.size | minus: 1 %}
-                {% for i in (0..n_readings) %}
-                    {% assign reading_link = page.A_reading_links[i] %}
-                    {% assign reading_name = page.A_reading_names[i] %}
-                    <div class="item">
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="fa fa-book fa-fw"></i>
-                    <a class="off" href="{{ reading_link }}" target="_blank" rel="noopener noreferrer">{{ reading_name }}</a>
-                    </div>
-                    <div class="smallspacer"></div>
-                {% endfor %}
-            {% else %}
-                <div class="smallhead subtle">
-                    Readings (to be added)
-                </div>
-            {% endif %}
-        </div>
-        <div class="bigspacer"></div>
-        <hr />
-        <!-- End ABCD Lecture Content -->
-
-
-
-
-
-        {% endif %}
-        <!-- End coursetype (Main Course or AI/ML Course) conditional Content -->
 
         <!-- Begin Links and Platforms Content -->
         <div class="smallhead">
