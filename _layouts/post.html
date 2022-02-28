@@ -400,11 +400,46 @@ layout: main
                     Readings (to be added)
                 </div>
             {% endif %}
+            <!-- End ReproNim Lecture Content -->
+
+            <!-- Begin Q&A Lecture Content -->
         </div>
         {% if page.qa_video %}
         <div class="bigspacer"></div>
         <hr />
-        <!-- End ReproNim Lecture Content -->
+                <div class="row" align="left">
+                    <h2 align="center">
+                        Instructor Question and Answer Webcast Recording
+                    </h2>
+
+                    <h4 align="center">
+                        Recorded in 2020. Note that course-related announcement made during this recording may be out of date. Please see the top of this page for 2022 Course announcements.
+                    </h4>
+
+                    <div class="media">
+                        <iframe width="560" height="315" src="{{ page.qa_video}}?cc_load_policy=1&cc_lang_pref=en" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="bigspacer"></div>
+
+                    {% if page.qa_doc %}
+                        <div class="smallhead">
+                        <b>{{page.title}} Q&A Doc</b>: Click <a class="off" href="{{ page.qa_doc }}" target="_blank" rel="noopener noreferrer">here</a> for written answers to the Q&A Doc.
+                        </div>
+                    {% else %}
+                        <div class="smallhead subtle">
+                            Q&A Doc transcript (to be added)
+                        </div>
+                    {% endif %}
+
+                </div>
+                {% endif %}
+
+                </div>
+                <div class="bigspacer"></div>
+                <hr />
 
         {% endif %}
         <!-- End coursetype (Main Course or AI/ML Course) conditional Content -->
