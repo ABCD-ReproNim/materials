@@ -137,18 +137,9 @@ layout: main
 
         <!-- Begin ABCD Lecture Content -->
         <div class="row" align="left">
-          <!-- Begin coursetype (Main Course or AI/ML Course) conditional Content -->
-          {% if post.coursetype == "maincourse" %}
-              <h2 align="center">
-                  ABCD Lecture: {{ page.abcd_title }}
-              </h2>
-          {% else %}
-              <h2 align="center">
-                  Lecture 1: {{ page.A_title }}
-              </h2>
-          {% endif %}
-          <!-- End coursetype (Main Course or AI/ML Course) conditional Content -->
-
+            <h2 align="center">
+                ABCD Lecture: {{ page.abcd_title }}
+            </h2>
 
             {% if page.abcd_video %}
                 {% for video in page.abcd_video %}
