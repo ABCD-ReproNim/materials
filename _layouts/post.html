@@ -128,10 +128,17 @@ layout: main
         {% endif %}
 
         <!-- Begin ABCD Lecture Content -->
+        {% if page.abcd_title %}
         <div class="row" align="left">
             <h2 align="center">
                 ABCD Lecture: {{ page.abcd_title }}
             </h2>
+        {% else %}
+        <div class="row" align="left">
+            <h2 align="center">
+                AI/ML Lecture 1: {{ page.A_title }}
+            </h2>
+        {% endif %}
 
             {% if page.abcd_video %}
                 {% for video in page.abcd_video %}
