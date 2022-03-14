@@ -9,7 +9,7 @@ tags: []
 
 We will not ask students to turn in anything for these Project Month Prep data exercises. Rather, think of them as helpful resources for you as you prepare for the upcoming Project Month.
 
-## Project Month Prep Data Exercise 1
+## Project Month Prep Data Exercise Part 1
 
 [Project Month Prep Part 1:](https://github.com/ABCD-ReproNim/exercises/blob/main/project_month_prep/downloadABCD.md) The first installation of the Project Month data exercises! In this exercise we help you download, inspect, and visualize the ABCD 4.0 Tabular and Behavioral Dataset.
 
