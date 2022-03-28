@@ -18,6 +18,7 @@ Do you have a project idea that you want to work on during Project Month? Propos
 You can also view the schedule for Project Month on the [ABCD-ReproNim Google Calendar](https://calendar.google.com/calendar?cid=YWJjZHJlcHJvbmltQGdtYWlsLmNvbQ).
 
 **Resources for Project Week:**
+
 • Our virtual meeting place for Project Month will be on [Gather.Town](https://gather.town/app/vC4xzIIrfbFvptPB/abcd-repronim). The password to join has been emailed to you. Feel free to use this space to meet with your project team as needed or to virtually hang out with others during the week (there's a game room!) All presentations will be held in the lecture hall marked as room 400 in the Gather.Town space. The lecture hall is located all the way to the right of your screen when you enter.
 
 • Project teams will be communicating primarily via private channels in the [ABCD-ReproNim Slack](http://abcd-repronim.slack.com). If you are attending Project Month please [send us a message](mailto:info@abcd-repronim.org) so that we can add you to the appropriate Project Week Slack channels.
@@ -31,7 +32,8 @@ You can also view the schedule for Project Month on the [ABCD-ReproNim Google Ca
 • We expect all students participating in Project Month to adhere to our [ABCD-ReproNim Code of Conduct](https://docs.google.com/document/d/1XQf9aEggUlwIlft8mVGC1mdMjiJVWF4RDnnVGWKvfo8/edit?usp=sharing)
 
 **Questions?**
-DO you have a question about Project Month? Check out our [FAQ](https://docs.google.com/document/d/1_MpajolWdj3eN5vG83GnpljOO4t3Kmi7eOBPkZtXceY/edit?usp=sharing) or [send us a message](mailto:info@abcd-repronim.org).
+
+Do you have a question about Project Month? Check out our [FAQ](https://docs.google.com/document/d/1_MpajolWdj3eN5vG83GnpljOO4t3Kmi7eOBPkZtXceY/edit?usp=sharing) or [send us a message](mailto:info@abcd-repronim.org).
 
 <!---
 • [Here](https://docs.google.com/presentation/d/1sM5Qd0ftUxxUt1gUVTTUGBaL6dPXezUVxn7pB2YJtag/edit?usp=sharing) is a presentation about what to expect and how to prepare.
