@@ -17,7 +17,7 @@ Do you have a project idea that you want to work on during Project Month? Propos
 [Here](https://docs.google.com/forms/d/e/1FAIpQLSf9V3k-TF6EaQKdJ1eXC8BtOIRbJ2JPvcyrw-NFjPxYk6wAGA/viewform?usp=sf_link) is some information on what do expect during Project Month, including a schedule of events!
 You can also view the schedule for Project Month on the [ABCD-ReproNim Google Calendar](https://calendar.google.com/calendar?cid=YWJjZHJlcHJvbmltQGdtYWlsLmNvbQ).
 
-**Resources for Project Week:**
+**Resources for Project Month:**
 
 • Our virtual meeting place for Project Month will be on [Gather.Town](https://gather.town/app/vC4xzIIrfbFvptPB/abcd-repronim). The password to join has been emailed to you. Feel free to use this space to meet with your project team as needed or to virtually hang out with others during the week (there's a game room!) All presentations will be held in the lecture hall marked as room 400 in the Gather.Town space. The lecture hall is located all the way to the right of your screen when you enter.
 
