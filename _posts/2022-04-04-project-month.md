@@ -8,14 +8,15 @@ description: Project Month # Add post description (optional)
 img: project_month.jpg # Add image post (optional)
 ---
 
-The ABCD-ReproNim Project Month will be held virtually on April 4 - April 29, 2022. **If you would like to take part in Project Month please fill out our [Project Month Registration Form](https://docs.google.com/forms/d/e/1FAIpQLSf9V3k-TF6EaQKdJ1eXC8BtOIRbJ2JPvcyrw-NFjPxYk6wAGA/viewform?usp=sf_link) by Friday, April 1st, 2022.** Please note that only individuals who have [obtained ABCD data access](https://docs.google.com/forms/d/e/1FAIpQLSdZbXLB2HdciB88YN3JIXg6OdUN2dq1KnLTolIcos2Tu6FazA/viewform?usp=sf_link) and have provided us with confirmation of their Data Use Certifications (DUCs) will be able to participate in Project Month.
+The ABCD-ReproNim Project Month will be held virtually on April 4 - April 29, 2022. We invite all ABCD-ReproNim Students, ABCD-ReproNim alumni, and anyone from the ABCD community to join us! If you are interested in attending Project Month please join us at our Kickoff event Monday, April 4th, at 4pm EDT/1pm PDT in Room 400 of the [ABCD-ReproNim Gather.Town](https://gather.town/app/vC4xzIIrfbFvptPB/abcd-repronim) (password: Welcome2022Students).
+
+ If you would like to take part in Project Month you can **[Register Here](https://docs.google.com/forms/d/e/1FAIpQLSf9V3k-TF6EaQKdJ1eXC8BtOIRbJ2JPvcyrw-NFjPxYk6wAGA/viewform?usp=sf_link) by Friday, April 8th, 2022.** Please note that only individuals who have [obtained ABCD data access](https://docs.google.com/forms/d/e/1FAIpQLSdZbXLB2HdciB88YN3JIXg6OdUN2dq1KnLTolIcos2Tu6FazA/viewform?usp=sf_link) and have [provided us with confirmation](https://docs.google.com/forms/d/e/1FAIpQLSdZbXLB2HdciB88YN3JIXg6OdUN2dq1KnLTolIcos2Tu6FazA/viewform?usp=sf_link) of their Data Use Certifications (DUCs) will be able to participate in Project Month.
 
 **Propose a Project:**
 Do you have a project idea that you want to work on during Project Month? Propose your project idea [here](https://github.com/ABCD-ReproNim/2022_Project_Month/issues)!
 
 **Project Week Schedule:**
-[Here](https://docs.google.com/forms/d/e/1FAIpQLSf9V3k-TF6EaQKdJ1eXC8BtOIRbJ2JPvcyrw-NFjPxYk6wAGA/viewform?usp=sf_link) is some information on what do expect during Project Month, including a schedule of events!
-You can also view the schedule for Project Month on the [ABCD-ReproNim Google Calendar](https://calendar.google.com/calendar?cid=YWJjZHJlcHJvbmltQGdtYWlsLmNvbQ).
+You can also view the schedule for Project Month on the [ABCD-ReproNim Google Calendar](https://calendar.google.com/calendar?cid=YWJjZHJlcHJvbmltQGdtYWlsLmNvbQ). [Here](https://docs.google.com/forms/d/e/1FAIpQLSf9V3k-TF6EaQKdJ1eXC8BtOIRbJ2JPvcyrw-NFjPxYk6wAGA/viewform?usp=sf_link) is some additional information on what to expect during Project Month!
 
 **Resources for Project Month:**
 
